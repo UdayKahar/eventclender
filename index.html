@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>My Evo Calendar</title>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/css/evo-calendar.min.css"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="hero">
+            <div id="calendar"></div>
+        </div>
+
+        <!-- Add jQuery library (required) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+    <!-- Add the evo-calendar.js for.. obviously, functionality! -->
+    <script src="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/js/evo-calendar.min.js"></script>
+    <script>
+        $("#calendar").evoCalendar({
+            calendarEvents: [
+        {
+            id: 'bHay68s', // Event's ID (required)
+            name: "New Year", // Event name (required)
+            date: "January/1/2020", // Event date (required)
+            type: "holiday", // Event type (required)
+            everyYear: true // Same event every year (optional)
+        },
+        {
+            name: "Vacation Leave",
+            badge: "02/13 - 02/15", // Event badge (optional)
+            date: ["March/13/2022", "March/15/2022"], // Date range
+            description: "Vacation leave for 3 days.", // Event description (optional)
+            type: "event",
+            color: "#63d867" // Event custom color (optional)
+        }
+        ]
+        });
+
+    </script>
+
+    </body>
+</html>
