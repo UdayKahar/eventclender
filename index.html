@@ -1,9 +1,9 @@
 <html>
     <head>
         <title>My Evo Calendar</title>
-        <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/css/evo-calendar.min.css"/> -->
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/css/evo-calendar.min.css"/>
         <link rel="stylesheet" href="evo-calendar.min.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="hero">
@@ -14,28 +14,131 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 
     <!-- Add the evo-calendar.js for.. obviously, functionality! -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/js/evo-calendar.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/evo-calendar@1.1.2/evo-calendar/js/evo-calendar.min.js"></script>
     <script src="evo-calendar.min.js"></script>
     <script>
+        var colorGreen = '#63d867';
+        var colorRed = '#ff5252';
+        var colorBlue = '#00b0ff';
+        var colorOrange = '#ff9f43';
+        var colorPurple = '#9c27b0';
+
         $("#calendar").evoCalendar({
             calendarEvents: [
+        // {
+        //     id: 'bHay68s', // Event's ID (required)
+        //     name: "New Year", // Event name (required)
+        //     date: "January/1/2020", // Event date (required)
+        //     type: "holiday", // Event type (required)
+        //     everyYear: true, // Same event every year (optional)
+        //     link:"https://www.google.com/",
+        // },
+        // {
+        //     name: "Vacation Leave",
+        //     badge: "02/13 - 02/15", // Event badge (optional)
+        //     date: ["March/13/2022", "March/15/2022"], // Date range
+        //     description: "Vacation leave for 3 days.", // Event description (optional)
+        //     type: "event",
+        //     color: self, // Event custom color (optional)
+        //     link:"#",
+        //     // img:"https://images.unsplash.com/photo-1648423249829-5dcab9043bd4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        // },
+
+        // april
         {
-            id: 'bHay68s', // Event's ID (required)
-            name: "New Year", // Event name (required)
-            date: "January/1/2020", // Event date (required)
-            type: "holiday", // Event type (required)
-            everyYear: true, // Same event every year (optional)
-            link:"https://www.google.com/",
+            name: "GGCE First Year Half Yearly Exam",
+            date: ["April/4/2022","April/9/2022"], // Date range
+            description: "Wish You All D Best...", // Event description (optional)
+            // description: "Vacation leave for 3 days.", // Event description (optional)
+            type: "event",
+            color: colorBlue, // Event custom color (optional)
+            link:"#",
         },
         {
-            name: "Vacation Leave",
-            badge: "02/13 - 02/15", // Event badge (optional)
-            date: ["March/13/2022", "March/15/2022"], // Date range
-            description: "Vacation leave for 3 days.", // Event description (optional)
+            name: "International Day of Sport for Development and Peace History",        
+            date: ["April/06/2022"],
+            description: "",
             type: "event",
-            color: "#63d867", // Event custom color (optional)
-            link:"https://www.youtube.com/"
-        }
+            color: "#63d867",
+            link:"#",
+            img:"https://d1csarkz8obe9u.cloudfront.net/posterpreviews/national-sports-day-blog-header-design-template-6af88731ddfcea676470dfc2e076cfbb_screen.jpg?ts=1630100335"
+        },
+        {
+            name: "World Health Day",
+            date: ["April/07/2022"],
+            description: "World Health Day seeks to raise awareness about a major global health concern selected by the World Health Organization. ", 
+            type: "event",
+            color: colorOrange,
+            link:"#",
+ 
+        },
+        {
+            name: "Ambedkar Jayanti",
+            date: ["April/14/2022"],
+            description: "Ambedkar Jayanti or Bhim Jayanti is an annual festival observed on 14 April to commemorate the memory of B. R. Ambedkar, Indian polymath and civil rights activist. ", 
+            type: "holiday",
+            color: colorRed, 
+            link:"#",
+
+        },
+        {
+            name: "Mahavir Jayanti",
+            date: ["April/14/2022"],
+            description: "Mahavir Janma Kalyanak is one of the most important religious festivals in Jainism. It celebrates the birth of Mahavir, the twenty-fourth and last Tirthankara of present Avasarpiṇī. On the Gregorian calendar, the holiday occurs either in March or April.", 
+            type: "holiday",
+            color: colorRed, 
+            link:"#",
+
+        },
+        {
+            name: "Good Friday",
+            date: ["April/15/2022"],
+            description: "Good Friday is a Christian holiday commemorating the crucifixion of Jesus and his death at Calvary. It is observed during Holy Week as part of the Paschal Triduum. It is also known as Holy Friday, Great Friday, Great and Holy Friday, and Black Friday. ", 
+            type: "holiday",
+            color: colorGreen, 
+            link:"#",
+
+        },
+        {
+            name: "World Creativity and Innovation Day",
+            date: ["April/21/2022"],
+            description: "The United Nations designated 21 April as World Creativity and Innovation Day to raise the awareness of the role of creativity and innovation in all aspects of human development.", 
+            type: "event",
+            color: colorGreen, 
+            link:"#",
+
+        },
+        {
+            name: "Earth Day",
+            date: ["April/22/2022"],
+            description: "Earth Day seeks to highlight and promote efforts dedicated to the protection of the environment. As we enter the 21st century, we face many environmental crises including global warming, deforestation, endangered wildlife, shortages of potable water, and widespread pollution. These crises negatively affect our planet’s resources, and they pose serious risk to our long-term lifestyles and health.",
+            color: colorGreen,
+            link:"#",
+        },
+        {
+            name: "World Intellectual Property Day",
+            date: ["April/26/2022"],
+            description: `The United NatioWorld Intellectual Property Day is observed annually on 26 April.[1] The event was established by the World Intellectual Property Organization(WIPO) in 2000.`,
+            type: "event",
+            color: colorGreen, 
+            link:"#",
+        },
+        {
+            name: "World Day for Safety and Health at Work",
+            date: ["April/28/2022"],
+            description: `World Day for Safety and Health at Work seeks to prevent occupational accidents and diseases at work.`,
+            type: "event",
+            color: colorGreen,
+            everyYear:true,
+            link:"#",
+        },
+        {
+            name: "World Veterinary Day",
+            date: ["April/30/2022"],
+            description: "The World Veterinary Day is an annual international day of awareness and action on the importance of health and safety in work. It is observed on 26 Celebration of the World Veterinary Day was started in 2000 as an annual celebration of the veterinary professionals. This day is celebrated to promote animal health and welfare.",
+            color: colorGreen, 
+            link:"#",
+        },
         ]
         });
 
